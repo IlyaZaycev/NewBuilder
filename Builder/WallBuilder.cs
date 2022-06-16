@@ -9,7 +9,6 @@ namespace Builder
     public abstract class WallBuilder
     {
         private Wall wall = new Wall();
-
         public Wall Wall
         {
             get { return wall; }
@@ -17,9 +16,7 @@ namespace Builder
         }
         public abstract Wall CreateWall();
         public abstract void SetHP(uint hp);
-        public abstract void SetVertIntWall(char a);
-        public abstract void SetHorizIntWall(char b);
-        public abstract void SetVertOutWall(char a);
-        public abstract void SetHorizOutWall(char b);
+        public abstract void SetVertWall(char a);
+        public abstract void SetHorizWall(char b);
     }
 }

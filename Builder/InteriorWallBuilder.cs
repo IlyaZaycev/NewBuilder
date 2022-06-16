@@ -17,25 +17,17 @@ namespace Builder
             return Wall;
         }
 
-        public override void SetHorizIntWall(char b)
+        public override void SetVertWall(char a)
         {
-            Wall.HorWall = b;
+            Wall.HorWall = a;
         }
 
-        public override void SetHorizOutWall(char b)
+        public override void SetHorizWall(char b)
         {
+            Wall.VertWall = b;
         }
 
         public override void SetHP(uint hp)
-        {
-        }
-
-        public override void SetVertIntWall(char a)
-        {
-            Wall.VertWall = a;
-        }
-
-        public override void SetVertOutWall(char a)
         {
         }
     }
